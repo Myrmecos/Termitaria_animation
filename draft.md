@@ -2,7 +2,7 @@
 
 Target length: 2:57. Spoken English, with room to breathe on the demo. Frame: 1920×1080. The app recordings are 1440×900. Fit them to the height of the frame and leave a slim side margin in `#f4f4f5`.
 
-Voice is recorded later. The four example animations are silent and already timed to their beats.
+Voice is recorded later. The example animations are silent and already timed to their beats.
 
 This is a software project. The hackathon asks for the key modules in action. That is the chat, the plan bar, and the knowledge graph. There is no hardware shot.
 
@@ -27,7 +27,7 @@ This is a software project. The hackathon asks for the key modules in action. Th
 | 2:02–2:10 | Autoresearch template, then Create | autoresearch webm, two cuts |
 | 2:10–2:29 | General: roster, task, reviewed plan | autoresearch webm, two cuts |
 | 2:29–2:44 | Artifacts, then the knowledge graph | autoresearch webm 46.2–57.1 |
-| 2:44–2:57 | Animation `Close` | not rendered; storyboard below |
+| 2:44–2:57 | Animation `Close` | `close.mp4` |
 
 ## Voice and action
 
@@ -125,9 +125,9 @@ Lower third on the graph: The question and MedQuAD land in the knowledge graph.
 
 ### 2:44–2:57 · Close
 
-Storyboard. Return to the title mound. Then three lines, one at a time: Nebius Token Factory, NVIDIA Nemotron 3 Super and Ultra, Termitaria.
+One worker stands alone. A reproductive and a soldier unroll from it, so the row is one reproductive, one worker, and one soldier. Those three fade. A soldier appears, and the word Termitaria sits underneath.
 
-> Command on the surface. Agents work in the tunnels. The colony remembers.
+> Like a termite colony, no single member holds the whole plan. Specialized members contribute their own work, preserve what they learn, and coordinate to build something larger. That is why we call it Termitaria.
 
 ## Example animations
 
@@ -138,11 +138,12 @@ Rendered at 1920×1080, 30 fps, silent, from this folder:
 .venv/bin/manim render colony.py Colony -r 1920,1080 --fps 30 --media_dir media
 .venv/bin/manim render memories.py Memories -r 1920,1080 --fps 30 --media_dir media
 .venv/bin/manim render stack.py Stack -r 1920,1080 --fps 30 --media_dir media
+.venv/bin/manim render close.py Close -r 1920,1080 --fps 30 --media_dir media
 ```
 
-Copies also sit next to the scene files: `problem.mp4`, `colony.mp4`, `memories.mp4`, `stack.mp4`.
+Copies also sit next to the scene files: `problem.mp4`, `colony.mp4`, `checkin.mp4`, `inspect.mp4`, `memories.mp4`, `stack.mp4`, `close.mp4`.
 
-`CheckIn`, `Title`, and `Close` stay as storyboards above. They reuse the Colony sprites and the title line.
+`Title` stays a storyboard above.
 
 ## Before YouTube
 
