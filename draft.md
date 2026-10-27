@@ -1,6 +1,6 @@
 # Termitaria — 3-minute demo script
 
-Target length: 2:55. Spoken English, about 410 words, with room to breathe on the demo. Frame: 1920×1080. The app recordings are 1440×900. Fit them to the height of the frame and leave a slim side margin in `#f4f4f5`.
+Target length: 2:57. Spoken English, with room to breathe on the demo. Frame: 1920×1080. The app recordings are 1440×900. Fit them to the height of the frame and leave a slim side margin in `#f4f4f5`.
 
 Voice is recorded later. The four example animations are silent and already timed to their beats.
 
@@ -19,14 +19,15 @@ This is a software project. The hackathon asks for the key modules in action. Th
 | 0:00–0:16 | Animation `Problem` | `problem.mp4` |
 | 0:16–0:38 | Animation `Colony` | `colony.mp4` |
 | 0:38–0:56 | Animation `CheckIn` | `checkin.mp4` |
-| 0:56–1:18 | Animation `Memories` | `memories.mp4` |
-| 1:18–1:30 | Animation `Title` | not rendered; storyboard below |
-| 1:30–1:52 | Animation `Stack` | `stack.mp4` |
-| 1:52–2:00 | Copper Desk template card | marketing webm 10.4–14.4 |
-| 2:00–2:08 | Autoresearch template, then Create | autoresearch webm, two cuts |
-| 2:08–2:27 | General: roster, task, reviewed plan | autoresearch webm, two cuts |
-| 2:27–2:42 | Artifacts, then the knowledge graph | autoresearch webm 46.2–57.1 |
-| 2:42–2:55 | Animation `Close` | not rendered; storyboard below |
+| 0:56–1:08 | Animation `Inspect` | `inspect.mp4` |
+| 1:08–1:20 | Animation `Memories` | `memories.mp4` |
+| 1:20–1:32 | Animation `Title` | not rendered; storyboard below |
+| 1:32–1:54 | Animation `Stack` | `stack.mp4` |
+| 1:54–2:02 | Copper Desk template card | marketing webm 10.4–14.4 |
+| 2:02–2:10 | Autoresearch template, then Create | autoresearch webm, two cuts |
+| 2:10–2:29 | General: roster, task, reviewed plan | autoresearch webm, two cuts |
+| 2:29–2:44 | Artifacts, then the knowledge graph | autoresearch webm 46.2–57.1 |
+| 2:44–2:57 | Animation `Close` | not rendered; storyboard below |
 
 ## Voice and action
 
@@ -50,25 +51,31 @@ Four steps in a line, with arrows pointing forward: literature gap scan, hypothe
 
 This beat stays animation. Neither recording shows a user cutting into one step while the others continue.
 
-### 0:56–1:18 · Memories
+### 0:56–1:08 · Inspect
 
-Three chat boxes appear: What is insulin?, It lowers blood sugar, and A medical paper. They line up into a knowledge graph. The links read answered by and drawn from. Five notebooks sit beside it, one per agent. An arrow from the collector's notebook stops at the reviewer's notebook.
+A chat list shows the five agents. A cursor clicks Skeptical Reviewer. That conversation opens with the reviewer's note already there, and the user asks a question in that thread only. The other agents stay in the list.
 
-> A project changes when new evidence shows up. Termitaria keeps two memories apart. The knowledge graph holds the project's evidence and the links between facts. Each agent keeps its own notebook: its role, its rules, and what it did last time. One agent cannot read another's notes.
+> In Termitaria, users can inspect the team's work and speak directly with individual agents. That is more like checking in with a specific teammate than interrupting a single all-purpose assistant.
 
-### 1:18–1:30 · Title
+### 1:08–1:20 · Memories
+
+Dots appear, then edges join them into an unlabeled knowledge graph. Beside it, five small database icons, each a stack of cylinders, sit in two rows: PI, Collector, and Ideator on the first, Designer and Reviewer centered on the second. The block is titled Agent memory.
+
+> Projects also evolve over time. To keep track of previous information, Termitaria uses a shared knowledge graph to preserve project-level evidence and relationships, and agent-specific memory for each agent.
+
+### 1:20–1:32 · Title
 
 Storyboard. The five sprites face a small mound of the same blocks. Title: Termitaria. Tagline under it: Command on the surface. Agents work in the tunnels. The colony remembers.
 
 > No single member holds the whole plan. Each one does its job, keeps what it learned, and the colony builds the result. That is Termitaria.
 
-### 1:30–1:52 · Stack
+### 1:32–1:54 · Stack
 
 Four layers, top to bottom: Next.js client, Go control plane and NATS JetStream, Python workers, Nebius Token Factory. Two chips on the bottom layer. Everyday turns use `nvidia/nemotron-3-super-120b-a12b`. The skeptical review uses `nvidia/Nemotron-3-Ultra-550b-a55b`. A worker sprite points at Super. The reviewer sprite points at Ultra.
 
 > The app is the surface. A Go control plane routes the work. Python workers call NVIDIA Nemotron 3 through Nebius Token Factory. Everyday turns use Nemotron 3 Super. The skeptical review uses Nemotron 3 Ultra. The same spec runs another team, with no new code.
 
-### 1:52–2:00 · Copper Desk card
+### 1:54–2:02 · Copper Desk card
 
 File: `demo_video/artifacts/marketing_2026-10-26_21_04.webm`
 
@@ -78,7 +85,7 @@ Lower third: Same harness. Copper Desk writes a sourced market brief.
 
 > Copper Desk is that second team: a desk lead, a researcher, and a reviewer.
 
-### 2:00–2:08 · Autoresearch, create the team
+### 2:02–2:10 · Autoresearch, create the team
 
 File: `demo_video/artifacts/autoresearch_2026-10-26_21_02.webm`
 
@@ -89,7 +96,7 @@ Jump cut, about 8 seconds together.
 
 Lower third: SwarmSpec becomes the team.
 
-### 2:08–2:27 · Autoresearch, the channel
+### 2:10–2:29 · Autoresearch, the channel
 
 Same file. Skip 25.8–31.6. That stretch is the long prompt being typed, and the model menu reads DeepSeek-V4.1-Flash.
 
@@ -104,7 +111,7 @@ Lower third: The investigator returns a reviewed experiment plan.
 
 > Here is Autoresearch on a real task. The question is whether a definition-only glossary improves claim-level faithfulness on MedQuAD. The investigator posts a reviewed experiment plan, and the plan bar moves forward.
 
-### 2:27–2:42 · Artifacts, then Knowledge
+### 2:29–2:44 · Artifacts, then Knowledge
 
 Same file, 46.2–57.1 (10.9s). Hold the graph for about one extra second in the edit so this block can run to 2:42.
 
@@ -116,7 +123,7 @@ Lower third on the graph: The question and MedQuAD land in the knowledge graph.
 
 > The reviewed plan stays in the channel. The knowledge graph keeps the question, MedQuAD, and the model named in the brief.
 
-### 2:42–2:55 · Close
+### 2:44–2:57 · Close
 
 Storyboard. Return to the title mound. Then three lines, one at a time: Nebius Token Factory, NVIDIA Nemotron 3 Super and Ultra, Termitaria.
 
