@@ -1,0 +1,8 @@
+# This file records the segment order used by Manim.
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/problem/480p15/partial_movie_files/Problem/f0640fcbe7c401b0481ee2621b3fcb955431e3ca631f9e4537293097dfe3ee5a.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/problem/480p15/partial_movie_files/Problem/99db2ee873460af862fcfad3032ab4d09cb90a816bd7aaf2a3d116bb9ed78012.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/problem/480p15/partial_movie_files/Problem/d2e56c70cb59fbd114caf574c7b409905cde64af4e46037e4da7bc7ae0935fa3.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/problem/480p15/partial_movie_files/Problem/1a7f462c102137e32099a9fcaabaa4e220cb7bc390b8ebbfb736139bbdb0b685.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/problem/480p15/partial_movie_files/Problem/4d0aef8e1387607cdfc317adf284c26ec80470bb8446c2d3d175fba356e026c3.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/problem/480p15/partial_movie_files/Problem/b8351e3b9969bd68372d22d2cb119d5e1ecfd9f5352987a8a2a29b11dd26bd9d.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/problem/480p15/partial_movie_files/Problem/a0a6e6855f46c75d2d74b8bc9111cfd0338de77772ad4b1dac421ccbd09a1025.mp4'

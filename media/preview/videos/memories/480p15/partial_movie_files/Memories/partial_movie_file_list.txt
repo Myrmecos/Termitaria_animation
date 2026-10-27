@@ -1,0 +1,10 @@
+# This file records the segment order used by Manim.
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/43edfd83c42519834a239bea1c4098c0f13486a7609f1604b78ac9b765a03394.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/484a78b4495f250a212b834a060f1f668cb56c29ce1f576206ba1bbe55ae2dee.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/7329f5688a76159801c6a332f8fbde05460728786b551325a476d22870a6f4e8.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/4930a5f1c2f703bd7106fc82268dd65d8ab7500124cbfc9038030c282a8fa3c8.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/5fcac842fdabc1dcdf7116faf61bab96ddafa48397198974218e292883b66c3b.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/54e5da7a8fa15f4e073eb3408fb147b365e04ffdc64cd1321cf761b8f7e21c39.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/751cea5b9f67630ed367559cf5bc219cde392deada57fecb4cd77abd01116a51.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/6facc2dd7f7ede350036ff3aa2ce41302ce83198ba0cd4957bffb1b083f40ac3.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/preview/videos/memories/480p15/partial_movie_files/Memories/fe716ec9f169aea9578be49f51d7c7684ef93b91b40e26f09cf22c20691cb7ab.mp4'
