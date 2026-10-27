@@ -18,7 +18,7 @@ This is a software project. The hackathon asks for the key modules in action. Th
 | --- | --- | --- |
 | 0:00–0:16 | Animation `Problem` | `problem.mp4` |
 | 0:16–0:38 | Animation `Colony` | `colony.mp4` |
-| 0:38–0:56 | Animation `CheckIn` | not rendered; storyboard below |
+| 0:38–0:56 | Animation `CheckIn` | `checkin.mp4` |
 | 0:56–1:18 | Animation `Memories` | `memories.mp4` |
 | 1:18–1:30 | Animation `Title` | not rendered; storyboard below |
 | 1:30–1:52 | Animation `Stack` | `stack.mp4` |
@@ -44,11 +44,11 @@ A rounded box labeled user stands on a line labeled Surface. Under the line, fiv
 
 ### 0:38–0:56 · CheckIn
 
-Storyboard, same style as Colony. A row of four stages: literature gap, hypothesis, experiment design, methods review. A user arrow cuts into methods review and points at the reviewer sprite. Then a plain conversation panel: the user line is in that agent's thread only. The other four stages stay put.
+Four steps in a line, with arrows pointing forward: literature gap scan, hypothesis, experiment design, method review. A box labeled User sits above the line. Three arrows cut into the line, labeled Check, Clarify, and Follow up. Each one stems a backward arrow to the previous step. The forward line stays in place.
 
-> The work is not a straight line. You can check a decision, or ask one specialist a follow-up, without stopping the rest of the team. You open that agent's conversation, the way you would check in with one teammate.
+> Complex work is rarely linear. Users may need to check a decision, clarify a direction, or ask a specialist a follow-up question without derailing the entire project.
 
-Neither recording opens a 1:1 chat. Keep this beat as animation. The Chats list in the Autoresearch file can flash the roster, and it does not replace this beat.
+This beat stays animation. Neither recording shows a user cutting into one step while the others continue.
 
 ### 0:56–1:18 · Memories
 
