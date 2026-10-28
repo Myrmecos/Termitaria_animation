@@ -25,12 +25,6 @@ LINKS = [
 ]
 
 
-def spoken(lines):
-    text = VGroup(*[words(line, 24) for line in lines]).arrange(DOWN, buff=0.08)
-    text.to_edge(DOWN, buff=0.28)
-    return text
-
-
 def memory_row(names):
     icons = VGroup(*[database() for _ in names]).arrange(RIGHT, buff=1.15)
     row = VGroup()
@@ -100,11 +94,7 @@ class Memories(DemoScene):
         self.play(FadeIn(graph_name), run_time=0.35)
         self.wait(0.35)
 
-        detail = spoken([
-            "To keep track of previous information, Termitaria uses",
-            "a shared knowledge graph to preserve project-level evidence and relationships,",
-            "and agent-specific memory for each agent.",
-        ])
+        detail = caption("To keep track of previous information, Termitaria uses")
         self.play(FadeOut(title), run_time=0.3)
         self.play(FadeIn(detail), run_time=0.3)
 
@@ -120,4 +110,12 @@ class Memories(DemoScene):
             LaggedStart(*[FadeIn(store, shift=LEFT * 0.15) for store in stores], lag_ratio=0.12),
             run_time=1.6,
         )
-        self.wait(6.2)
+        detail = self.replace_caption(detail, "a shared knowledge graph")
+        self.wait(1.0)
+        detail = self.replace_caption(
+            detail,
+            "to preserve project-level evidence and relationships,",
+        )
+        self.wait(1.2)
+        self.replace_caption(detail, "and agent-specific memory for each agent.")
+        self.wait(2.2)

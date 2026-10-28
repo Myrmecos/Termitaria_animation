@@ -111,9 +111,7 @@ class Colony(DemoScene):
         track = Line(dots[0].get_center(), dots[-1].get_center(), color=ACCENT, stroke_width=3)
         steps = VGroup(track, dots, labels)
         steps.next_to(tokens, DOWN, buff=0.28)
-        plan_title = caption(
-            "Their work becomes shared project knowledge rather than disappearing into one long chat."
-        )
+        plan_title = caption("Their work becomes shared project knowledge")
         self.play(FadeOut(team_title), run_time=0.35)
         self.play(
             FadeIn(plan_title),
@@ -127,4 +125,5 @@ class Colony(DemoScene):
             ),
             run_time=2.6,
         )
-        self.wait(3.2)
+        self.replace_caption(plan_title, "rather than disappearing into one long chat.")
+        self.wait(2.6)

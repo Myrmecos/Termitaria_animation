@@ -47,12 +47,6 @@ def note(text):
     return VGroup(body, label)
 
 
-def spoken(top, bottom):
-    lines = VGroup(words(top, 26), words(bottom, 26)).arrange(DOWN, buff=0.08)
-    lines.to_edge(DOWN, buff=0.28)
-    return lines
-
-
 class CheckIn(DemoScene):
     def construct(self):
         dots = VGroup(*[Dot(RIGHT * x + UP * STEP_Y, radius=0.1, color=ACCENT) for x in XS])
@@ -84,10 +78,7 @@ class CheckIn(DemoScene):
         self.play(LaggedStart(*steps, lag_ratio=0.35), run_time=2.6)
         self.wait(1.3)
 
-        detail = spoken(
-            "Users may need to check a decision, clarify a direction,",
-            "or ask a specialist a follow-up question without derailing the entire project.",
-        )
+        detail = caption("Users may need to check a decision, clarify a direction,")
         self.play(FadeOut(title), run_time=0.3)
         self.play(FadeIn(detail), run_time=0.3)
 
@@ -123,4 +114,7 @@ class CheckIn(DemoScene):
             self.play(Create(back), run_time=0.7)
             self.wait(0.25)
 
-        self.wait(7.55)
+        detail = self.replace_caption(detail, "or ask a specialist a follow-up question")
+        self.wait(2.2)
+        detail = self.replace_caption(detail, "without derailing the entire project.")
+        self.wait(4.15)

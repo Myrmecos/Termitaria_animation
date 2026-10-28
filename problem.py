@@ -47,9 +47,7 @@ class Problem(DemoScene):
     def construct(self):
         one = agent_sprite("agent0", height=1.55)
         one.move_to(UP * 0.05)
-        title = caption(
-            "One agent can answer questions, analyze information, propose a plan, or draft a report."
-        )
+        title = caption("One agent can answer questions, analyze information,")
         self.play(FadeIn(one), FadeIn(title), run_time=0.9)
         self.wait(0.25)
 
@@ -57,6 +55,10 @@ class Problem(DemoScene):
         for index, chip in enumerate(chips):
             count = index + 1
             chip.move_to(row_slot(count, index))
+            if index == 2:
+                self.play(FadeOut(title), run_time=0.3)
+                title = caption("propose a plan, or draft a report.")
+                self.play(FadeIn(title), run_time=0.3)
             if index:
                 self.play(
                     *[
@@ -88,9 +90,7 @@ class Problem(DemoScene):
         )
         self.wait(0.45)
 
-        row_title = caption(
-            "Asking one agent to do everything in a single conversation makes the work harder to steer, inspect, verify, and build upon."
-        )
+        row_title = caption("Asking one agent to do everything in a single conversation")
         self.play(FadeOut(many), run_time=0.25)
         icons = Group(*[agent_sprite(f"agent{i}") for i in range(1, 5)])
         icons.arrange(RIGHT, buff=1.55)
@@ -105,4 +105,8 @@ class Problem(DemoScene):
             ],
             run_time=2.2,
         )
-        self.wait(5.25)
+        row_title = self.replace_caption(
+            row_title,
+            "makes the work harder to steer, inspect, verify, and build upon.",
+        )
+        self.wait(4.05)

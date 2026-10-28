@@ -32,12 +32,6 @@ def message(text, fill, color):
     return VGroup(body, label)
 
 
-def spoken(top, bottom):
-    lines = VGroup(words(top, 26), words(bottom, 26)).arrange(DOWN, buff=0.08)
-    lines.to_edge(DOWN, buff=0.28)
-    return lines
-
-
 def pointer():
     mark = Triangle(color=INK, fill_color=INK, fill_opacity=1, stroke_width=0)
     mark.scale(0.11)
@@ -91,10 +85,7 @@ class Inspect(DemoScene):
         prompt = words("Select a chat", 20, MUTED)
         prompt.move_to(panel.get_center() + RIGHT * 2.15)
 
-        title = spoken(
-            "In Termitaria, users can inspect the team's work",
-            "and speak directly with individual agents.",
-        )
+        title = caption("In Termitaria, users can inspect the team's work")
         panel.set_z_index(0)
         highlight.set_z_index(1)
         for item in (divider, heading, prompt, title):
@@ -112,7 +103,7 @@ class Inspect(DemoScene):
             FadeIn(title),
             run_time=1.4,
         )
-        self.wait(0.25)
+        title = self.replace_caption(title, "and speak directly with individual agents.")
 
         cursor = pointer()
         cursor.set_z_index(3)
@@ -171,12 +162,14 @@ class Inspect(DemoScene):
         user.next_to(agent, DOWN, buff=0.28)
         user.align_to(composer, RIGHT)
         self.play(FadeOut(typed), FadeIn(user), run_time=0.55)
-        self.wait(1.0)
+        self.wait(0.65)
 
-        compare = spoken(
-            "That is more like checking in with a specific teammate",
-            "than interrupting a single all-purpose assistant.",
-        )
+        compare = caption("That is more like checking in with a specific teammate")
         self.play(FadeOut(title), run_time=0.3)
         self.play(FadeIn(compare), run_time=0.3)
-        self.wait(4.7)
+        self.wait(1.8)
+        compare = self.replace_caption(
+            compare,
+            "than interrupting a single all-purpose assistant.",
+        )
+        self.wait(2.3)

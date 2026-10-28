@@ -63,7 +63,8 @@ class Stack(DemoScene):
         chips = VGroup(super_chip, ultra_chip).arrange(RIGHT, buff=0.4)
         chips.next_to(layers, DOWN, buff=0.35)
         model_title = caption("Everyday turns use Super. The review uses Ultra.")
-        self.play(ReplacementTransform(title, model_title), FadeIn(chips), run_time=3.6)
+        self.play(FadeOut(title), run_time=0.3)
+        self.play(FadeIn(model_title), FadeIn(chips), run_time=3.3)
         self.wait(0.4)
 
         worker = termite("worker", height=0.62)

@@ -1,12 +1,6 @@
 from theme import *
 
 
-def spoken(lines):
-    text = VGroup(*[words(line, 26) for line in lines]).arrange(DOWN, buff=0.08)
-    text.to_edge(DOWN, buff=0.28)
-    return text
-
-
 class Close(DemoScene):
     def construct(self):
         row_y = UP * 0.4
@@ -17,14 +11,11 @@ class Close(DemoScene):
         soldier = termite("soldier", height=1.25, fill=WHITE, stroke=LINE)
         soldier.move_to(RIGHT * 2.45 + row_y)
 
-        line = spoken(["Like a termite colony, no single member holds the whole plan."])
+        line = caption("Like a termite colony, no single member holds the whole plan.")
         self.play(FadeIn(worker), FadeIn(line), run_time=0.7)
         self.wait(2.8)
 
-        detail = spoken([
-            "Specialized members contribute their own work, preserve what they learn,",
-            "and coordinate to build something larger.",
-        ])
+        detail = caption("Specialized members contribute their own work,")
         self.play(FadeOut(line), run_time=0.3)
         self.play(FadeIn(detail), run_time=0.3)
         self.play(
@@ -35,9 +26,12 @@ class Close(DemoScene):
             ),
             run_time=1.5,
         )
-        self.wait(3.2)
+        detail = self.replace_caption(detail, "preserve what they learn,")
+        self.wait(0.8)
+        detail = self.replace_caption(detail, "and coordinate to build something larger.")
+        self.wait(1.2)
 
-        ending = spoken(["That is why we call it Termitaria."])
+        ending = caption("That is why we call it Termitaria.")
         self.play(FadeOut(detail), run_time=0.3)
         self.play(FadeIn(ending), run_time=0.3)
         self.play(FadeOut(reproductive), FadeOut(worker), FadeOut(soldier), run_time=0.45)

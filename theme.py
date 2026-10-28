@@ -21,6 +21,12 @@ class DemoScene(Scene):
     def setup(self):
         self.camera.background_color = WHITE
 
+    def replace_caption(self, current, text):
+        nxt = caption(text)
+        self.play(FadeOut(current), run_time=0.3)
+        self.play(FadeIn(nxt), run_time=0.3)
+        return nxt
+
 
 def words(text, size=28, color=INK):
     return Text(text, font_size=size, color=color, font="Helvetica")
@@ -33,8 +39,9 @@ def fit(text, size, max_width, color=INK):
     return mob
 
 
+# Every subtitle uses this size. A long sentence is the next caption, not a smaller line.
 def caption(text):
-    line = fit(text, 30, 12.4)
+    line = words(text, 30)
     line.to_edge(DOWN, buff=0.38)
     return line
 

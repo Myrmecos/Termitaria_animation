@@ -16,3 +16,8 @@ file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/ch
 file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/checkin/1080p30/partial_movie_files/CheckIn/uncached_00014.mp4'
 file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/checkin/1080p30/partial_movie_files/CheckIn/uncached_00015.mp4'
 file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/checkin/1080p30/partial_movie_files/CheckIn/uncached_00016.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/checkin/1080p30/partial_movie_files/CheckIn/uncached_00017.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/checkin/1080p30/partial_movie_files/CheckIn/uncached_00018.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/checkin/1080p30/partial_movie_files/CheckIn/uncached_00019.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/checkin/1080p30/partial_movie_files/CheckIn/uncached_00020.mp4'
+file 'file:/Users/entomophile/Desktop/Termitaria/demo_animations/media/videos/checkin/1080p30/partial_movie_files/CheckIn/uncached_00021.mp4'
